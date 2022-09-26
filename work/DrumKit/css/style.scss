@@ -1,0 +1,15 @@
+$blue1: rgb(210, 210, 248);
+$blue2: rgb(194, 194, 226);
+$blue3: rgb(184, 184, 226);
+$blue4: rgb(174, 174, 226);
+$black: #000;
+$black: #333;
+$black: #666;
+
+*{padding: 0; margin: 0;}
+body{background: linear-gradient($blue1,white, $blue2); height: 100vh; display: flex; align-items: center; justify-content: space-around;}
+.key{ width: 100px; height: 100px; border: 3px solid rgb(252, 231, 192); text-align: center; background: $blue1; transition: .07s; box-shadow: 0 10px 5px rgba(178, 178, 178, 0.596);
+  kbd{display: block; padding: 20px 0; font-size: 30px;} 
+  .sound{color: rgb(246, 234, 211);}
+  &.playing{transform: scale(1.2);}
+}

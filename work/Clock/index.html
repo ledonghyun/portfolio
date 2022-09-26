@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Clock</title>
+  <style>
+    *{padding: 0; margin: 0;}
+    body{display: flex; align-items: center; justify-content: center; background: #555; width: 100vw; height:100vh;}
+    .clock{width: 500px; height: 500px; border: 10px solid white; border-radius: 50%; padding: 30px; box-shadow: inset 3px 3px 20px black;}
+    .clock-face{position: relative; width: 100%; height: 100%;}
+    .hand{width: 50%; 
+      background: white; 
+      position: absolute; 
+      top: 50%; 
+      transform-origin: 100%; 
+      transform: rotate(90deg); 
+      transition: all .05s; 
+      box-shadow: 3px 3px 10px black;
+    }
+    .hour-hand{height: 8px; z-index: 3;}
+    .min-hand{height: 6px; z-index: 2;}
+    .second-hand{height: 4px; transform: rotate(30deg); transition-timing-function: cubic-bezier(0.22, 1.16, 0, 3.16); z-index: 1;}
+  </style>
+</head>
+<body>
+  <div class="clock">
+    <div class="clock-face">
+      <div class="hand hour-hand"></div>
+      <div class="hand min-hand"></div>
+      <div class="hand second-hand"></div>
+    </div>
+  </div>
+
+  <script>
+    const secondHand = document.querySelector('.second-hand')
+    const minHand = document.querySelector('.min-hand')
+    const hourHand = document.querySelector('.hour-hand')
+
+    function clockHand () {
+      const now = new Date();
+      const second = now.getSeconds();
+      const secondDegree = ((second/60)*360+90);
+
+      const min = now.getMinutes();
+      const minDegree = ((min/60)*360+90);
+
+      const hour = now.getHours();
+      const hourDegree = ((hour/12)*360+90);
+      
+      secondHand.style.transform = `rotate(${secondDegree}deg)`;
+      minHand.style.transform = `rotate(${minDegree}deg)`;
+      hourHand.style.transform = `rotate(${hourDegree}deg)`;
+    }
+
+    setInterval(clockHand, 1000)
+  </script>
+</body>
+</html>

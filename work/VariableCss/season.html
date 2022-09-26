@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Update season</title>
+  <style>
+    :root{
+      --seasonImg: url(./img/spring.png);
+/*       --summer: url(./img/summer.png);
+      --fall: url(./img/fall.png);
+      --winter: url(./img/winter.png); */
+    }
+    *{margin: 0; padding: 0; list-style: none;}
+
+    .wrap{width: 800px; margin: 0 auto;}
+    h1{font-size: 50px ; text-align: center; margin: 40px;}
+    .form{width: 600px; text-align: center; margin: 0 auto; margin-top: 40px;}
+    label{display: block; font-size: 25px; margin-bottom: 20px;}
+    input#change{width: inherit;}
+    ul.months{width: 600px; margin: 5px auto; display: flex; justify-content: space-between;}
+    ul.months>li{text-align: center; width: 11px;}
+
+    .seasonImg{background: var(--seasonImg) red; width: 500px; height: 600px; margin: 0 auto;}
+  </style>  
+</head>
+<body>
+  <div class="wrap">
+    <h1>Update Season Img</h1>
+    <div class="seasonImg"></div>
+    <div class="form">
+      <label for="change">What's the month today?
+      </label>
+      <input id="change" type="range" min="1" max="12" value="5" name="month" data-sizing="px" data-spring="spring" data-summer="summer" data-fall="fall" data-winter="winter">
+    </div>
+    <ul class="months">
+      <li>1</li>
+      <li>2</li>
+      <li>3</li>
+      <li>4</li>
+      <li>5</li>
+      <li>6</li>
+      <li>7</li>
+      <li>8</li>
+      <li>9</li>
+      <li>10</li>
+      <li>11</li>
+      <li>12</li>
+    </ul>
+  </div>
+  <script>
+    const input = document.querySelector('.form input');
+    let winter = '';
+    let spring = '';
+    let fall = '';
+    let summer = '';
+
+    function imgUpdate() {
+      const value = this.value;
+      console.log(value);
+      if (value<3 || value == 12){
+        document.documentElement.style.setProperty('--seasonImg', `url(./img/${this.dataset.winter}.png)`);
+      }
+      else if (value<6 && value >= 3){
+        document.documentElement.style.setProperty('--seasonImg', `url(./img/${this.dataset.spring}.png)`);
+      }
+      else if (value<9 && value >= 6){
+        document.documentElement.style.setProperty('--seasonImg', `url(./img/${this.dataset.summer}.png)`);
+      }
+      else {
+        document.documentElement.style.setProperty('--seasonImg', `url(./img/${this.dataset.fall}.png)`);
+      }
+    }
+
+    input.addEventListener('mousemove', imgUpdate);
+    input.addEventListener('click', imgUpdate);
+  </script>
+</body>
+</html>
+
