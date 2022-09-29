@@ -267,6 +267,17 @@ $(function(){
                 $('#mobile>.click-menu').removeClass('on');
             }
         }})
+        /* work 목록바 hover와 클릭 효과 */
+
+        $(function(){
+            $('#mobile .section-text>.work-box>h3').click(function(){
+                if($(this).hasClass('more')){
+                    $(this).addClass('close').removeClass('more');
+                }else if($(this).hasClass('close')){
+                    $(this).addClass('more').removeClass('close');
+                }
+            });
+        });
     }
     /* window.onresize = function(){ document.location.reload(); }; */
 })

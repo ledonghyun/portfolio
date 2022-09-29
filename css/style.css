@@ -267,20 +267,29 @@ html, body{width: 100%; height: 100%;}
 
   /* work */
 #mobile #m-work{width: 100%;}
-#mobile #m-work .section-title>h2{width: 45rem;}
+#mobile #m-work .section-title>h2{width: 35rem;}
 #mobile #m-work .section-text{height: auto;}
 #mobile #m-work .section-text>.text-title{font-size: 4.5rem; margin: 2rem 0;}
 
 #mobile #m-work .section-text>.work-box{margin: 5rem 0;}
-#mobile #m-work .section-text>.work-box>.work{margin: 2rem 0;}
-#mobile #m-work .section-text>.work-box>.work>.img{width: 100%; height: auto; padding: 2rem 0; display: block; overflow: hidden;}
+#mobile #m-work .section-text>.work-box>h3{width: 80%; background-color: #3A89FF; padding: 1.5rem 3rem; font-size: 3.5rem; color: rgba(255, 255, 255, 0.7); -webkit-text-stroke: .7px black; margin-bottom: 2rem; font-weight: bolder; position: relative; cursor: pointer;}
+#mobile #m-work .section-text>.work-box>h3::after{content: ''; position: absolute; top: 50%; transform: translateY(-50%); right: 3rem; width: 0px; height: 0px; border-left: 8px solid transparent; border-right: 8px solid transparent; border-bottom: 12px solid rgba(255, 255, 255, 0.8); transition: 0.3s;}
+#mobile #m-work .section-text>.work-box>h3.close::after{transform: rotate(180deg); top: 35%;}
 
-#mobile #m-work .section-text>.work-box>.work:hover>.img>img{transform: scale(110%); transition: .3s;}
+#mobile #m-work .section-text>.work-box>h3.js{background-color: yellow;}
+#mobile #m-work .section-text>.work-box>h3.react{background-color: #74D2FA;}
 
-#mobile #m-work .section-text>.work-box>.work>.img>img{width: 100%;}
+#mobile #m-work .section-text>.work-box>.work-wrap{height: 100%; overflow: hidden;}
+#mobile #m-work .section-text>.work-box>h3.more+.work-wrap{height: 0; overflow: hidden;}
+#mobile #m-work .section-text>.work-box>.work-wrap>.work{margin: 2rem 0;}
+#mobile #m-work .section-text>.work-box>.work-wrap>.work>.img{width: 100%; height: auto; padding: 2rem 0; display: block; overflow: hidden;}
 
-#mobile #m-work .section-text>.work-box>.work>h3{color: #3A89FF; font-size: 3rem; font-weight: bold; padding: 1rem 0;} 
-#mobile #m-work .section-text>.work-box>.work>.use{font-size: 2.5rem;}
+#mobile #m-work .section-text>.work-box>.work-wrap>.work:hover>.img>img{transform: scale(110%); transition: .3s;}
+
+#mobile #m-work .section-text>.work-box>.work-wrap>.work>.img>img{width: 100%;}
+
+#mobile #m-work .section-text>.work-box>.work-wrap>.work>h4{color: #3A89FF; font-size: 3rem; font-weight: bold; padding: 1rem 0;} 
+#mobile #m-work .section-text>.work-box>.work-wrap>.work>.use{font-size: 2.5rem;}
 
   /* contact */
 #mobile #m-contact{width: 100%;}
