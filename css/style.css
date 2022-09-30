@@ -251,7 +251,7 @@ html, body{width: 100%; height: 100%;}
 
 #mobile .section-text{width: 100%; height: 40rem;}
 #mobile #m-introduce .section-text>.text{font-size: 2.5rem; line-height: 4rem;}
-#mobile #m-introduce .section-text>.text>img{position: absolute; right: 0; bottom: 0; animation: upDown 1.5s infinite alternate; width: 30rem;}
+#mobile #m-introduce .section-text>.text>img{position: absolute; right: 0; bottom: 0; animation: upDown 1.5s infinite alternate; width: 20rem;}
 
 @keyframes upDown {
   0%{transform: translateY(70px);}
