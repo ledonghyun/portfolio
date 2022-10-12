@@ -14,13 +14,15 @@
     <script src="./javascript/jQuery3.6.0.min.js"></script>
     <script src="./javascript/float.js" defer></script>
     <script src="./javascript/script.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap" rel="stylesheet">
 </head>
 <body>
     <ul id="skip">
-        <li title="소개링크"><a href="#introduce">소개로 가기</a></li>
-        <li title="스킬링크"><a href="#introduce">스킬로 가기</a></li>
-        <li title="작업링크"><a href="#introduce">작업으로 가기</a></li>
-        <li title="연락링크"><a href="#introduce">연락으로 가기</a></li>
+        <li title="스킬링크"><a href="$skill">스킬로 가기</a></li>
+        <li title="작업링크"><a href="#work">작업으로 가기</a></li>
+        <li title="연락링크"><a href="#contact">연락으로 가기</a></li>
     </ul>
     <div id="desktop">
         <section class="section section-head" id="header">
@@ -32,7 +34,6 @@
                     </h1>
                     <ul class="nav">
                         <li><a class="on" href="#header">main</a></li>
-                        <li><a href="#introduce">introduce</a></li>
                         <li><a href="#skills">skills</a></li>
                         <li><a href="#work">work</a></li>
                         <li><a href="#contact">contact</a></li>
@@ -55,15 +56,6 @@
                             <div class="head-body2-left">
                                 <div class="text-wrap">
                                     <div class="title">
-                                        <h3><a  class="blue" href="#introduce">Introduce</a></h3>
-                                        <span></span>
-                                    </div>
-                                    <p class="text">
-                                        안녕하세요 예비 프론트엔드 개발자 이동현입니다. 그동안 프론트엔드개발자가 되기 위해 준비한 결과물을 보여드리겠습니다.
-                                    </p>
-                                </div>
-                                <div class="text-wrap">
-                                    <div class="title">
                                         <h3><a class="blue" href="#skills">Skills</a></h3>
                                         <span></span>
                                     </div>
@@ -84,14 +76,6 @@
                             <div class="head-body2-right">
                                 <div class="text-wrap">
                                     <div class="title">
-                                        <h3><a href="#" class="blue">StudyBlog</a></h3>
-                                    </div>
-                                    <p class="text">
-                                        <a href="https://velog.io/@le1117" target="_blank" title="blog로 가기"></a>
-                                    </p>
-                                </div>
-                                <div class="text-wrap">
-                                    <div class="title">
                                         <h3><a href="#contact" class="blue">Contact</a></h3>
                                     </div>
                                     <a href="#contact" class="text">
@@ -104,55 +88,7 @@
                 </div><!-- wrap1350 end -->
                 <div class="wrap50 bg">
                     <div class="bookMark">
-                        <a href="#header" class="wrap50-main"></a>
-                        <a href="#introduce" class="wrap50-intro"></a>
-                        <a href="#skills" class="wrap50-skill"></a>
-                        <a href="#work" class="wrap50-work"></a>
-                        <a href="#contact" class="wrap50-contact"></a>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section class="section section-body" id="introduce">
-            <div class="bg-wrap">
-                <div class="wrap1350 bg">
-                    <h1>
-                        <span>INTRODUCE</span>
-                    </h1>
-                    <ul class="nav">
-                        <li><a href="#header">main</a></li>
-                        <li><a class="on" href="#introduce">introduce</a></li>
-                        <li><a href="#skills">skills</a></li>
-                        <li><a href="#work">work</a></li>
-                        <li><a href="#contact">contact</a></li>
-                    </ul>
-                    <h2>Introduce</h2>
-                    <div class="content">
-                        <div class="ct-left">
-                            <div class="title-box">
-                                <h4>I'm Lee Dong Hyun</h4>
-                                <span></span>
-                            </div>
-                            <div class="text">
-                                <p>
-                                    웹사이트를 만들고 싶다는 로망으로 프론트엔드에 관심을 가지게 되었고, 길을 찾은 저는 HTML, CSS, React 등 웹 개발언어 학습과 클론 코딩, 프로젝트를 통한 실습으로 프론트엔드와 가까워지는 중입니다.
-                                </p>
-                            </div>
-                            <div class="img"></div>
-                        </div>
-                        <div class="ct-right">
-                            <p class="text">
-                                학원을 통해 포토샵, Figma, HTMl, CSS, Javascript, jQuery를 공부하며 웹 퍼블리셔를 알아가면서 시스템과 프로그램을 만드는 프론트엔드 개발자에 빠지게 되었습니다.<br/>
-                                학원 수료 이후 독학으로 Javascript, typescript, react를 학습하고 프로젝트를 통해 실습해보며 프론트엔드 개발자의 길을 확신할 수 있었습니다. 앞으로는 Vue, SQL, Python, Java 등을 공부하여
-                                프론트엔드 개발자에서 풀 스택 개발자가 되는 것이 저의 목표입니다.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="wrap50 bg">
-                    <div class="bookMark">
-                        <a href="#header" class="wrap50-main"></a>
-                        <a href="#introduce" class="wrap50-intro"></a>
+                        <a href="#header" class="wrap50-main"></a>   
                         <a href="#skills" class="wrap50-skill"></a>
                         <a href="#work" class="wrap50-work"></a>
                         <a href="#contact" class="wrap50-contact"></a>
@@ -168,7 +104,6 @@
                     </h1>
                     <ul class="nav">
                         <li><a href="#header">main</a></li>
-                        <li><a href="#introduce">introduce</a></li>
                         <li><a class="on" href="#skills">skills</a></li>
                         <li><a href="#work">work</a></li>
                         <li><a href="#contact">contact</a></li>
@@ -185,8 +120,7 @@
                 </div>
                 <div class="wrap50 bg">
                     <div class="bookMark">
-                        <a href="#header" class="wrap50-main"></a>
-                        <a href="#introduce" class="wrap50-intro"></a>
+                        <a href="#header" class="wrap50-main"></a>            
                         <a href="#skills" class="wrap50-skill"></a>
                         <a href="#work" class="wrap50-work"></a>
                         <a href="#contact" class="wrap50-contact"></a>
@@ -202,7 +136,6 @@
                     </h1> 
                     <ul class="nav">
                         <li><a href="#header">main</a></li>
-                        <li><a href="#introduce">introduce</a></li>
                         <li><a href="#skills">skills</a></li>
                         <li><a class="on" href="#work">work</a></li>
                         <li><a href="#contact">contact</a></li>
@@ -377,8 +310,7 @@
                 </div>
                 <div class="wrap50 bg">
                     <div class="bookMark">
-                        <a href="#header" class="wrap50-main"></a>
-                        <a href="#introduce" class="wrap50-intro"></a>
+                        <a href="#header" class="wrap50-main"></a> 
                         <a href="#skills" class="wrap50-skill"></a>
                         <a href="#work" class="wrap50-work"></a>
                         <a href="#contact" class="wrap50-contact"></a>
@@ -394,7 +326,6 @@
                     </h1>
                     <ul class="nav">
                         <li><a href="#header">main</a></li>
-                        <li><a href="#introduce">introduce</a></li>
                         <li><a href="#skills">skills</a></li>
                         <li><a href="#work">work</a></li>
                         <li><a class="on" href="#contact">contact</a></li>
@@ -418,10 +349,6 @@
                             </div>
                         </div>
                         <div class="contact-right contact-text">
-                            <div class="blog">
-                                <h6>Blog</h6>
-                                <a class="text" href="https://velog.io/@le1117" title="blog로 가기" target="_blank">https://velog.io/@le1117</a>
-                            </div>
                             <div class="phone">
                                 <h6>Phone</h6>
                                 <p class="text">010-6756-8003</p>
@@ -432,7 +359,6 @@
                 <div class="wrap50 bg">
                     <div class="bookMark">
                         <a href="#header" class="wrap50-main"></a>
-                        <a href="#introduce" class="wrap50-intro"></a>
                         <a href="#skills" class="wrap50-skill"></a>
                         <a href="#work" class="wrap50-work"></a>
                         <a href="#contact" class="wrap50-contact"></a>
