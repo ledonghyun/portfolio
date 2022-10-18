@@ -44,9 +44,41 @@ html, body{width: 100%; height: 100%;}
 #desktop .bg>ul.nav>li>a.on{color: #333;}
 #desktop .bg>h2{margin: 1rem 0; width: 34rem; height: 6.4rem; line-height: 6.4rem; font-size: 3.5rem; color: rgba(255, 255, 255, 0.7); -webkit-text-stroke: 1px black; font-weight: 700; background: #3A89FF; text-align: center;}
 
-#desktop #header .bg>.head-body{display: flex; width: 100%; height: 100%; justify-content: space-between; margin-top: 2rem;}
+#desktop #header .bg>.head-body{width: 100%; height: auto; display: flex; align-items: center; margin-top: 5rem;}
+#desktop #header .bg>.head-body>.main{}
+#desktop #header .bg>.head-body>.main>.greetings{width: auto; font-size: 4rem; height: 7rem; margin-bottom: 3rem; font-weight: bolder; display: inline-block; position: relative; border-bottom: .5rem solid #333; box-sizing: border-box; padding: 1rem 0;}
+#desktop #header .bg>.head-body>.main>.greetings>.blue{font-size: 4rem;}
+#desktop #header .bg>.head-body>.main>.greetings>img{width: 10rem; height: 10rem; position: absolute; right: -10rem; top: 50%; transform: translateY(-50%);}
+#desktop #header .bg>.head-body .main-introduce{width: 100%; display: flex; flex-wrap: wrap; border: .8rem solid #333;}
+#desktop #header .bg>.head-body .main-introduce>h3{width: 100%; height: 20%; line-height: 5rem; background: #333; color: #fff; font-size: 2.8rem; padding-left: 2rem;}
 
-#desktop #header .bg>.head-body>.head-body1{width: 45%; height: 90%; display: flex; flex-wrap: wrap; align-content: flex-start; padding-right: 2rem;}
+/* 폰트 사이즈 */
+#desktop #header .bg>.head-body .main-introduce span{font-size: 2.3rem; line-height: 4.5rem; font-weight: 500;}
+
+#desktop #header .bg>.head-body .main-introduce div{ padding: 2rem; box-sizing: border-box;}
+#desktop #header .bg>.head-body .main-introduce>.privacy{width: 25%; margin-right: 8em;}
+#desktop #header .bg>.head-body .main-introduce>.privacy>p{}
+#desktop #header .bg>.head-body .main-introduce>.privacy>p>.title{}
+#desktop #header .bg>.head-body .main-introduce>.privacy>p>span.title + span{font-weight: bolder;}
+#desktop #header .bg>.head-body .main-introduce>.line{border-right: 0.8rem dashed #333; padding: 0; width: 1%; margin-right: 2rem;}
+#desktop #header .bg>.head-body .main-introduce>.introduction{width: 58%;}
+#desktop #header .bg>.head-body .main-introduce>.introduction>h2{}
+#desktop #header .bg>.head-body .main-introduce>.introduction>span{}
+
+#desktop #header .bg>.head-body .main-articles{width: 100%; display: flex; margin-top: 6rem;}
+#desktop #header .bg>.head-body .main-articles>.text-wrap{width: 32%;}
+#desktop #header .bg>.head-body .main-articles>.text-wrap>p.text{width: 90%;}
+#desktop #header .bg>.head-body .main-articles>.text-wrap>p.text>a{font-size: 2.5rem; line-height: 3rem;}
+#desktop #header .bg>.head-body .main-articles>.text-wrap>p.text>a>img{display:block; width: 90%}
+
+/* #desktop #header .bg>.head-body .main-articles>.text-wrap>p.text>a:hover{background-position: 100%;}
+#desktop #header .bg>.head-body .main-articles>.text-wrap>p.text>a{display: block; width: 80%; height: 40rem; background: url(../img/work/img-velog.png) no-repeat; background-size: cover; transition: 3s;} */
+
+#desktop #header .head-body div>.text-wrap>.title{width: 90%; border-bottom: .5rem solid #333; margin-bottom: .5rem;display: flex; justify-content: space-between;}
+#desktop #header .head-body div>.text-wrap>.title>h3{margin-bottom: .3rem;}
+#desktop #header .head-body div>.text-wrap>.title>h3>a{font-size: 3rem; font-weight: 700;}
+#desktop #header .head-body div>.text-wrap>.title>span{background: url(../img/icon/Ellipse_3-removebg-preview.png) no-repeat; width: 4.3rem; height: 4.3rem; display: block; background-size: contain;}
+/* #desktop #header .bg>.head-body>.head-body1{width: 45%; height: 90%; display: flex; flex-wrap: wrap; align-content: flex-start; padding-right: 2rem;}
 #desktop #header .head-body1>.head-body1-top{width: 100%; height: 13rem; margin-bottom: 1rem; display: flex; align-items: center; justify-content: left;}
 #desktop #header .head-body1>.head-body1-top>.text{font-size: 3rem; line-height: 3.5rem;}
 #desktop #header .head-body1>.head-body1-top>.text>span{font-size: 3rem;}
@@ -54,25 +86,19 @@ html, body{width: 100%; height: 100%;}
 #desktop #header .head-body1>.head-body1-bot{width: 100%; height: 50%; background: url(../img/icon/img.png) no-repeat; background-size: cover;}
 
 #desktop #header .bg>.head-body>.head-body2{width: 60%; display: flex; justify-content: space-between;}
-    /* 공통속성 */
 #desktop #header .head-body2>div>.text-wrap:not(:first-child){margin-top: 1rem;}
-#desktop #header .head-body2>div>.text-wrap>.title{width: 90%; border-bottom: .5rem solid #333; margin-bottom: .5rem;display: flex; justify-content: space-between;}
-#desktop #header .head-body2>div>.text-wrap>.title>h3{margin-bottom: .3rem;}
-#desktop #header .head-body2>div>.text-wrap>.title>h3>a{font-size: 3rem; font-weight: 700;}
-#desktop #header .head-body2>div>.text-wrap>.title>span{background: url(../img/icon/Ellipse_3-removebg-preview.png) no-repeat; width: 4.3rem; height: 4.3rem; display: block; background-size: contain;}
+
+
+
+
 
 #desktop #header .bg>.head-body>.head-body2>.head-body2-left{width: 45%;}
-#desktop #header .bg>.head-body>.head-body2>.head-body2-left>.text-wrap>.text{font-size: 1.8rem; color: rgba(51, 51, 51, 0.7); font-weight: 500; line-height: 2.5rem;}
+#desktop #header .bg>.head-body>.head-body2>.head-body2-left>.text-wrap>.text{font-family: 'Noto Sans KR', sans-serif; font-size: 2rem; color: rgba(51, 51, 51, 0.7); font-weight: 300; line-height: 2.5rem;}
 
-#desktop #header .bg>.head-body>.head-body2>.head-body2-right{width: 49%;}
-#desktop #header .head-body2>.head-body2-right>.text-wrap>a.text{display: inline-block;}
-#desktop #header .head-body2>.head-body2-right>.text-wrap>a.text>img{display: block; width: 100%;}
-#desktop #header .head-body2>.head-body2-right>.text-wrap>p.text>a{display: block; width: 80%; height: 40rem; background: url(../img/work/img-velog.png) no-repeat; background-size: cover; transition: 3s;}
-#desktop #header .head-body2>.head-body2-right>.text-wrap>p.text>a:hover{background-position: 100%;}
 
 /* introduce */
 
-#desktop #introduce .bg>h2{width: 20rem;}
+/* #desktop #introduce .bg>h2{width: 20rem;}
 #desktop #introduce .content{display: flex; width: 100%; margin-top: 5rem; justify-content: space-between;}
 #desktop #introduce .ct-left{margin-right: 3rem;}
 #desktop #introduce .ct-left>.title-box>h4, #introduce .ct-left>.text, .ct-right>.text{padding: 1rem 0; border-bottom: 4px dashed #333;}
@@ -85,12 +111,12 @@ html, body{width: 100%; height: 100%;}
 #desktop #introduce .ct-right>.text{font-size: 2rem; line-height: 4rem;}
 
 #desktop #introduce .ct-left>.title-box{position: relative;}
-#desktop #introduce .ct-left>.title-box>span{position: absolute; display: block; width: 10rem; height: 5rem; background: url(../img/icon/car.svg) no-repeat; left: 0; bottom: -1rem; z-index: 999; background-size: contain; opacity: 0;}
+#desktop #introduce .ct-left>.title-box>span{position: absolute; display: block; width: 10rem; height: 5rem; background: url(../img/icon/car.svg) no-repeat; left: 0; bottom: -1rem; z-index: 999; background-size: contain; opacity: 0;} */
 
 /* skills */
 
 #desktop #skills .bg>h2{width: 18rem;}
-#desktop #skills .bg>.skill-title{text-align: center; font-size: 4.5rem; position: relative; margin: 2rem 0;}
+/* #desktop #skills .bg>.skill-title{text-align: center; font-size: 4.5rem; position: relative; margin: 2rem 0;}
 #desktop #skills .bg>.skill-title>span{display: inline-block; position: relative; width: 5rem; height: 5rem;background: url(../img/icon/skill-icon-removebg-preview.png) no-repeat; background-size: contain; border: none;}
 #desktop #skills .bg>.skill-title>.skill-img1{top: 0rem;  animation: skill1 infinite 3s linear;}
 #desktop #skills .bg>.skill-title>.skill-img2{right: 1.8rem; top: -1rem; transform: rotate(60deg); animation: skill2 infinite 3s linear;}
@@ -103,9 +129,23 @@ html, body{width: 100%; height: 100%;}
     0% {transform: rotate(0);}
     100% {transform: rotate(-360deg);}
   }
+ */
+#desktop #skills .bg>.skill-box{width: 100%; display: flex; padding: 3rem; box-sizing: border-box; justify-content: space-around;}
+/* 스킬박스 공통속성 */
+#desktop #skills .bg>.skill-box h6{font-size: 3.5rem; padding: 1rem 0; padding-left: 2rem; background: #333; color: #fff;}
+#desktop #skills .bg>.skill-box img{display: block; width: 100%; margin: 1.5rem 0;}
+#desktop #skills .bg>.skill-box> div > div {border: 0.8rem solid #333; margin-bottom: 2rem;}
 
-#desktop #skills .skill-box{width: 100%; height: 60%; background: #1A478A;}
-#desktop #canvas-float{width: 80rem; height: 55rem; position: relative; left: 50%; transform: translateX(-50%);}
+#desktop #skills .bg>.skill-box>.box-left{}
+#desktop #skills .bg>.skill-box>.box-left>.frontend{}
+#desktop #skills .bg>.skill-box>.box-left>.frontend>img{height: 40rem;}
+
+#desktop #skills .bg>.skill-box>.box-right{width: 48%;}
+#desktop #skills .bg>.skill-box>.box-right>.version-control{width: 30rem;}
+#desktop #skills .bg>.skill-box>.box-right>.version-control>img{height: 6rem; width: 70%; margin-left: 2rem;}
+#desktop #skills .bg>.skill-box>.box-right>.communication{width: 50rem; box-sizing: border-box;}
+#desktop #skills .bg>.skill-box>.box-right>.communication>img{height: 15rem;}
+
 /* work */
 
 #desktop #work .bg>h2{width: 38rem; display: inline-block; transform: scale(.7); opacity: .6; transition: .3s; cursor: pointer;}
@@ -152,7 +192,7 @@ html, body{width: 100%; height: 100%;}
 #desktop #contact .bg>.contact-img{width: 100%; height: 10rem; text-align: center; position: relative; margin-bottom: 3rem;}
 #desktop #contact .bg>.contact-img>h5{background: url(../img/icon/contacticonHead.png) no-repeat; background-size: contain; display: inline-block; width: 10rem; height: 10rem; font-size: 0;}
 #desktop #contact .bg>.contact-img>.text{position: absolute; top: 0; right: 0; border-bottom: 4px dashed #333; box-sizing: border-box;}
-#desktop #contact .bg>.contact-img>.text>img{width: 24rem; height: 6rem; display: block;}
+#desktop #contact .bg>.contact-img>.text>img{width: 20rem; height: 6rem; display: block;}
 
 #desktop #contact .bg>.contact-text-wrap{display: flex; position: relative; width: 100%; justify-content: space-between; }
 #desktop #contact .bg>.contact-text-wrap::after{width: 3px; background: #999; height: 100%; content: ''; position: absolute; left: 50%; transform: translateX(-50%);}
@@ -163,17 +203,27 @@ html, body{width: 100%; height: 100%;}
 #desktop #contact .bg>.contact-text-wrap>.contact-text>div>.text{display: block; font-size: 3rem; padding: 3rem 0;}
 
 /* 패러독스 애니메이션 */
-#desktop div.head-body1.parall{animation: aniY 1.5s forwards;}
+
+#desktop .main-introduce.parall{animation: aniY 1.3s forwards;}
+#desktop .main-articles>div:nth-child(1).parall{animation: aniY 1.4s forwards;}
+#desktop .main-articles>div:nth-child(2).parall{animation: aniY 1.6s forwards;}
+#desktop .main-articles>div:nth-child(3).parall{animation: aniY 1.8s forwards;}
+
+/* #desktop div.head-body1.parall{animation: aniY 1.5s forwards;}
 #desktop div.head-body2-left.parall{animation: aniY 1.9s forwards;}
 #desktop div.head-body2-right.parall{animation: aniY 2.1s forwards;}
 
 #desktop div.ct-left.parall{animation: aniY 1.5s forwards;}
-#desktop div.ct-right.parall{animation: aniY 1.9s forwards;}
+#desktop div.ct-right.parall{animation: aniY 1.9s forwards;} */
 
-#desktop .skill-title.parall{animation: opac1 2s forwards;}
+#desktop .frontend.parall{animation: aniY 1.6s forwards;}
+#desktop .version-control.parall{animation: aniY 1.8s forwards;}
+#desktop .communication.parall{animation: aniY 1.9s forwards;}
+
+/* #desktop .skill-title.parall{animation: opac1 2s forwards;}
 #desktop .skill-title.parall.skill-img1{animation: opac1 2s forwards;}
 #desktop .skill-title.parall.skill-img2{animation: opac1 2s forwards;}
-#desktop .skill-box.parall{animation: opac1 2.2s forwards;}
+#desktop .skill-box.parall{animation: opac1 2.2s forwards;} */
 
 #desktop .work-content.parall{animation: aniY 1.3s forwards;}
 #desktop .clone-coding.parall{animation: aniY 1.5s forwards;}

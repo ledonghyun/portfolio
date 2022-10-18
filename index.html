@@ -20,7 +20,7 @@
 </head>
 <body>
     <ul id="skip">
-        <li title="스킬링크"><a href="$skill">스킬로 가기</a></li>
+        <li title="스킬링크"><a href="#skills">스킬로 가기</a></li>
         <li title="작업링크"><a href="#work">작업으로 가기</a></li>
         <li title="연락링크"><a href="#contact">연락으로 가기</a></li>
     </ul>
@@ -38,9 +38,61 @@
                         <li><a href="#work">work</a></li>
                         <li><a href="#contact">contact</a></li>
                     </ul>
-                    <h2>FrontEnd PortFolio</h2>
                     <div class="head-body">
-                        <div class="head-body1">
+                        <div class="main">
+                            <h2 class="greetings">안녕하세요, 저는 <span class="blue">프론트엔드 개발자 이동현</span>입니다.<img class="laptop-img" src="#"/></h2>
+                            <div class="main-introduce">
+                                <h3>About Me</h3>
+                                <div class="privacy">
+                                    <p class="myName">
+                                        <span class="title">이름 : </span><span>이동현</span>
+                                    </p>
+                                    <p class="myAge">
+                                        <span class="title">생년월일 : </span><span>2000.11.16</span>
+                                    </p>
+                                    <p class="myAge">
+                                        <span class="title">주소지 : </span><span>경기 평택</span>
+                                    </p>
+                                </div>
+                                <div class="line"></div>
+                                <div class="introduction">
+                                    <p class="selfIntroduction">
+                                        <span>'어제와 똑같이 살면서 다른 내일을 기대하지마라'를 모토로 더 나은 방식을 찾으면서 새로운 시도와 배움을 멈추지 않고있습니다. 최종 목표는 프론트엔드에서 풀스택 개발자로 개발을 하고싶습니다.</span>
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="main-articles">
+                                <div class="text-wrap">
+                                    <div class="title">
+                                        <h3><a class="blue" href="#skills">Skills</a></h3>
+                                        <span></span>
+                                    </div>
+                                    <p class="text">
+                                        <a href="#skills" title="스킬페이지로 이동"><img src="./img/main/skill.png"/ alt="스킬페이지 바로가기"></a>
+                                        <!-- I learning web development technologies to become a developer. It's not as good as development, but I also studing design and got the GTQ-Photoshop certificate. I can......  -->
+                                    </p>
+                                </div>
+                                <div class="text-wrap">
+                                    <div class="title">
+                                        <h3><a href="#work" class="blue">Work</a></h3>
+                                        <span></span>
+                                    </div>
+                                    <p class="text">
+                                        <a href="#work" title="work페이지로 이동">React, Javascript, Html, Css 등 프론트엔드에 꼭 필요한 기초적인 언어로 클론사이트와, 다양한 앱을 디자인하며 만들고 있습니다. </a>
+                                    </p>
+                                </div>
+                                <div class="text-wrap">
+                                    <div class="title">
+                                        <h3><a href="#contact" class="blue">Contact</a></h3>
+                                    </div>
+                                    <a href="#contact" class="text">
+                                        <img src="./img/icon/contactIcon.png" alt="contactIcon">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- <div class="head-body1">
                             <div class="head-body1-top">
                                 <p class="text">
                                     Hello, l'm <span class="blue">Lee Dong-Hyun</span>
@@ -51,7 +103,7 @@
                                 </p>
                             </div>
                             <div class="head-body1-bot"></div>
-                        </div><!-- head-body1-end -->
+                        </div>
                         <div class="head-body2">
                             <div class="head-body2-left">
                                 <div class="text-wrap">
@@ -72,7 +124,7 @@
                                         Currently, I know how to handle html,css,javascript and jquery, and I used them to code the website. There are my Coding Works!
                                     </p>
                                 </div>
-                            </div><!-- head-body2-left-end -->
+                            </div>
                             <div class="head-body2-right">
                                 <div class="text-wrap">
                                     <div class="title">
@@ -82,8 +134,8 @@
                                         <img src="./img/icon/contactIcon.png" alt="contactIcon">
                                     </a>
                                 </div>
-                            </div><!-- head-body2-right-end -->
-                        </div><!-- head-body2-end -->
+                            </div>
+                        </div> -->
                     </div><!-- head-body-end -->
                 </div><!-- wrap1350 end -->
                 <div class="wrap50 bg">
@@ -109,13 +161,28 @@
                         <li><a href="#contact">contact</a></li>
                     </ul>
                     <h2>My skills</h2>
-                    <div class="skill-title">
+<!--                     <div class="skill-title">
                         I can....
                         <span class="skill-img1"></span>
                         <span class="skill-img2"></span>
-                    </div>
+                    </div> -->
                     <div class="skill-box">
-                        <canvas id="canvas-float"></canvas>
+                        <div class="box-left">
+                            <div class="frontend">
+                                <h6>Frontend</h6>
+                                <img src="./img/skill/frontEnd.svg" alt="프론트엔드 스킬 이미지: html, css, js, react, jquery, scss"/>
+                            </div>
+                        </div>
+                        <div class="box-right">
+                            <div class="version-control">
+                                <h6>상태관리</h6>
+                                <img src="./img/skill/github.png" alt="버전관리 스킬 이미지: 깃허브"/>
+                            </div>
+                            <div class="communication">
+                                <h6>디자인 협업</h6>
+                                <img src="./img/skill/communication.svg" alt="커미뉴케이션 스킬 이미지: 피그마, 제플린"/>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <div class="wrap50 bg">

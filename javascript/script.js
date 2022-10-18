@@ -26,7 +26,9 @@ $(function(){
             }
         });
         
-        $('a[href="#introduce"]').click(function () {
+            // 수정이유 : introduce delete
+            
+/*         $('a[href="#introduce"]').click(function () {
         
             if (isDisabled) {  //<-( 1 ) 수행가능여부 검사
               return false;
@@ -37,13 +39,13 @@ $(function(){
                 isDisabled = false;
               },3000)
             }
-        });
+        }); */
         $('a[href="#skills"]').click(function () {
         
             if (isDisabled) {  //<-( 1 ) 수행가능여부 검사
               return false;
             } else {
-              clickEvent(3);
+              clickEvent(2);
               isDisabled = true; //<-( 2 ) 실행 불가능하도록 flag 변경
               setTimeout(function(){
                 isDisabled = false; 
@@ -55,7 +57,7 @@ $(function(){
             if (isDisabled) {  //<-( 1 ) 수행가능여부 검사
               return false;
             } else {
-              clickEvent(4);
+              clickEvent(3);
               isDisabled = true; //<-( 2 ) 실행 불가능하도록 flag 변경
               setTimeout(function(){
                 isDisabled = false;
@@ -67,7 +69,7 @@ $(function(){
             if (isDisabled) {  //<-( 1 ) 수행가능여부 검사
               return false;
             } else {
-              clickEvent(5);
+              clickEvent(4);
               isDisabled = true; //<-( 2 ) 실행 불가능하도록 flag 변경
               setTimeout(function(){
                 isDisabled = false;
@@ -83,7 +85,7 @@ $(function(){
         $(window).on("wheel", function(e) {
             if(mHtml.is(":animated")) return;
                     if(e.originalEvent.deltaY > 0) {
-                        if(page == 5) return;
+                        if(page == 4) return; // 수정이유 : introduce delete
                         page++;
                     } else if(e.originalEvent.deltaY < 0) {
                         if(page == 1) return;
@@ -101,18 +103,13 @@ $(function(){
                         page3Paral();
                     }if(page==4){
                         page4Paral();
-                    }if(page==5){
+                    }/* if(page==5){        // 수정이유 : introduce delete
                         page5Paral();
-                    }
+                    } */
         });
         
         let bookMark=function(){
             let i=(page-1);
-            /* $('.section').find('.bg-wrap>.wrap50>.bookMark>a').hover(function(){
-                $(this).stop().animate({right:'-15px'},500)
-            },function(){
-                $(this).stop().animate({right:'0px'},500)
-            }) */
             $('.section').find('.bg-wrap>.wrap50>.bookMark').animate({right:'70px'},5);
             $('.section').find('.bg-wrap>.wrap50>.bookMark>a').delay(100).animate({display:'block'});
             $('.section').eq(i).find('.bg-wrap>.wrap50>.bookMark>a').eq(i).css('display','none');
@@ -126,13 +123,13 @@ $(function(){
         
         let page1Paral = function(){
             $('div').removeClass('parall');
-            $('.head-body1').addClass('parall');
-            $('.head-body2-left').addClass('parall');
-            $('.head-body2-right').addClass('parall');
-            $('.section').find('.bg-wrap>.wrap50>.bookMark').addClass('parall')
+            $('.main-introduce').addClass('parall');
+            $('.main-articles').children('.text-wrap').addClass('parall');
         }
-        
-        let page2Paral = function(){
+
+        // 수정이유 : introduce delete
+
+/*         let page2Paral = function(){
             $('div').removeClass('parall');
             $('.ct-left').addClass('parall');
             $('.ct-right').addClass('parall');
@@ -148,18 +145,20 @@ $(function(){
                 let h4TextSlice = text.slice(0, i);
                 textTarget.text(h4TextSlice);
             },100)
+        } */
+        let page2Paral = function(){
+            $('div').removeClass('parall');
+            $('.frontend').addClass('parall');
+            $('.version-control').addClass('parall');
+            $('.communication').addClass('parall');
         }
         let page3Paral = function(){
-            $('div').removeClass('parall');
-            $('.skill-title').addClass('parall');
-            $('.skill-box').addClass('parall');
-        }
-        let page4Paral = function(){
             $('div').removeClass('parall');
             $('.work-content').addClass('parall');
             $('.clone-coding').addClass('parall');
         }
-        let page5Paral = function(){
+
+        let page4Paral = function(){
             $('div').removeClass('parall');
             $('.contact-text-wrap').addClass('parall');
         }
@@ -171,13 +170,14 @@ $(function(){
             bookMark();
         }
         
+        /* 노트북 전원 이벤트 */
         $(function(){
             setInterval(function(){
-                $('.head-body1-top>.img>img').attr('src','./img/icon/notebookicon-on-removebg-preview.png');
+                $('.greetings>.laptop-img').attr('src','./img/icon/notebookicon-on-removebg-preview.png');
             },600);
             
             setInterval(function(){
-                $('.head-body1-top>.img>img').attr('src','./img/icon/notebookicon-removebg-preview.png');
+                $('.greetings>.laptop-img').attr('src','./img/icon/notebookicon-removebg-preview.png');
             },1000);
         });
 
