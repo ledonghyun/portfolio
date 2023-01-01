@@ -25,21 +25,7 @@ $(function(){
               },3000)
             }
         });
-        
-            // 수정이유 : introduce delete
-            
-/*         $('a[href="#introduce"]').click(function () {
-        
-            if (isDisabled) {  //<-( 1 ) 수행가능여부 검사
-              return false;
-            } else {
-              clickEvent(2);
-              isDisabled = true; //<-( 2 ) 실행 불가능하도록 flag 변경
-              setTimeout(function(){
-                isDisabled = false;
-              },3000)
-            }
-        }); */
+
         $('a[href="#skills"]').click(function () {
         
             if (isDisabled) {  //<-( 1 ) 수행가능여부 검사
@@ -127,25 +113,6 @@ $(function(){
             $('.main-articles').children('.text-wrap').addClass('parall');
         }
 
-        // 수정이유 : introduce delete
-
-/*         let page2Paral = function(){
-            $('div').removeClass('parall');
-            $('.ct-left').addClass('parall');
-            $('.ct-right').addClass('parall');
-            let titleBox=$('.content>.ct-left>.title-box');
-            titleBox.find('span').animate({left:0,opacity:1},0);
-            titleBox.find('span').animate({left:'100%',opacity:0},3000);
-            let textTarget=$('.content>.ct-left>.title-box>h4');
-            let text="I'm Lee Dong Hyun";
-            let i=0;
-            let typing = setInterval(function(){
-                i++;
-                if(i>text.length+1) {clearInterval(typing); return;}
-                let h4TextSlice = text.slice(0, i);
-                textTarget.text(h4TextSlice);
-            },100)
-        } */
         let page2Paral = function(){
             $('div').removeClass('parall');
             $('.frontend').addClass('parall');
@@ -180,61 +147,6 @@ $(function(){
                 $('.greetings>.laptop-img').attr('src','./img/icon/notebookicon-removebg-preview.png');
             },1000);
         });
-
-
-        /* work btn event */
-        let workH2 = $('#desktop #work .bg>h2');
-
-        workH2.hover(function(){
-            workH2.removeClass('on');
-            $(this).addClass('on');
-        });
-        workH2.click(function(){
-            let workTitle = $(this).attr('class');
-            workH2.removeClass('on');
-            $(this).addClass('on');
-            
-            if (workTitle == "firstWork on"){
-                $('.myWork>div').removeClass('on')
-                $('.ccw').addClass('on');
-            }else if (workTitle == "secondWork on"){
-                $('.myWork>div').removeClass('on')
-                $('.jsProject').addClass('on');
-            }else if (workTitle == "thirdWork on"){
-                $('.myWork>div').removeClass('on')
-                $('.ReactProject').addClass('on');
-            }
-            else{
-                console.log('오류')
-            }
-        });
-
-        const ccwBtnList=$('.ccw>.work-content>.slide-btn>li');
-        ccwBtnList.on({click:function(){
-            let i=$(this).index();
-            ccwBtnList.removeClass('on')
-            $(this).addClass('on')
-            $('.ccw>.clone-coding>.aside').animate({opacity:0,zIndex:0});
-            $('.ccw>.clone-coding>.aside').eq(i).animate({opacity:1,zIndex:9},300);
-        }});
-
-        const jsBtnList=$('.jsProject>.work-content>.slide-btn>li');
-        jsBtnList.on({click:function(){
-            let i=$(this).index();
-            jsBtnList.removeClass('on')
-            $(this).addClass('on')
-            $('.jsProject>.clone-coding>.aside').animate({opacity:0,zIndex:0});
-            $('.jsProject>.clone-coding>.aside').eq(i).animate({opacity:1,zIndex:9},300);
-        }});
-
-        const ReactBtnList=$('.ReactProject>.work-content>.slide-btn>li');
-        ReactBtnList.on({click:function(){
-            let i=$(this).index();
-            ReactBtnList.removeClass('on')
-            $(this).addClass('on')
-            $('.ReactProject>.clone-coding>.aside').animate({opacity:0,zIndex:0});
-            $('.ReactProject>.clone-coding>.aside').eq(i).animate({opacity:1,zIndex:9},300);
-        }})
     }
     /* 모바일 (768px~) 스크립트 */
     else{
@@ -267,17 +179,6 @@ $(function(){
                 $('#mobile>.click-menu').removeClass('on');
             }
         }})
-        /* work 목록바 hover와 클릭 효과 */
-
-        $(function(){
-            $('#mobile .section-text>.work-box>h3').click(function(){
-                if($(this).hasClass('more')){
-                    $(this).addClass('close').removeClass('more');
-                }else if($(this).hasClass('close')){
-                    $(this).addClass('more').removeClass('close');
-                }
-            });
-        });
     }
     /* window.onresize = function(){ document.location.reload(); }; */
 })

@@ -78,58 +78,10 @@ html, body{width: 100%; height: 100%;}
 #desktop #header .head-body div>.text-wrap>.title>h3{margin-bottom: .3rem;}
 #desktop #header .head-body div>.text-wrap>.title>h3>a{font-size: 3rem; font-weight: 700;}
 #desktop #header .head-body div>.text-wrap>.title>span{background: url(../img/icon/Ellipse_3-removebg-preview.png) no-repeat; width: 4.3rem; height: 4.3rem; display: block; background-size: contain;}
-/* #desktop #header .bg>.head-body>.head-body1{width: 45%; height: 90%; display: flex; flex-wrap: wrap; align-content: flex-start; padding-right: 2rem;}
-#desktop #header .head-body1>.head-body1-top{width: 100%; height: 13rem; margin-bottom: 1rem; display: flex; align-items: center; justify-content: left;}
-#desktop #header .head-body1>.head-body1-top>.text{font-size: 3rem; line-height: 3.5rem;}
-#desktop #header .head-body1>.head-body1-top>.text>span{font-size: 3rem;}
-#desktop #header .head-body1>.head-body1-top>.img{margin-left: 4%;}
-#desktop #header .head-body1>.head-body1-bot{width: 100%; height: 50%; background: url(../img/icon/img.png) no-repeat; background-size: cover;}
-
-#desktop #header .bg>.head-body>.head-body2{width: 60%; display: flex; justify-content: space-between;}
-#desktop #header .head-body2>div>.text-wrap:not(:first-child){margin-top: 1rem;}
-
-
-
-
-
-#desktop #header .bg>.head-body>.head-body2>.head-body2-left{width: 45%;}
-#desktop #header .bg>.head-body>.head-body2>.head-body2-left>.text-wrap>.text{font-family: 'Noto Sans KR', sans-serif; font-size: 2rem; color: rgba(51, 51, 51, 0.7); font-weight: 300; line-height: 2.5rem;}
-
-
-/* introduce */
-
-/* #desktop #introduce .bg>h2{width: 20rem;}
-#desktop #introduce .content{display: flex; width: 100%; margin-top: 5rem; justify-content: space-between;}
-#desktop #introduce .ct-left{margin-right: 3rem;}
-#desktop #introduce .ct-left>.title-box>h4, #introduce .ct-left>.text, .ct-right>.text{padding: 1rem 0; border-bottom: 4px dashed #333;}
-#desktop #introduce .ct-left>.title-box>h4{font-size: 4rem; position: relative; font-weight: bold; position: relative;}
-#desktop #introduce .ct-left>.title-box>h4::after{content: ''; position: absolute; width: 6rem; height: 6rem; background: url(../img/icon/corp.png) no-repeat; background-size: contain; right: 0;}
-
-#desktop #introduce .ct-left>.text>p{font-size: 2.5rem; line-height: 4rem;}
-#desktop #introduce .ct-left>.img{width: 100%; height: 38rem; background: url(../img/icon/img.png) no-repeat; margin-top: 2rem; background-size: cover;}
-#desktop #introduce .ct-right{width: 80%; margin-top: 8rem;}
-#desktop #introduce .ct-right>.text{font-size: 2rem; line-height: 4rem;}
-
-#desktop #introduce .ct-left>.title-box{position: relative;}
-#desktop #introduce .ct-left>.title-box>span{position: absolute; display: block; width: 10rem; height: 5rem; background: url(../img/icon/car.svg) no-repeat; left: 0; bottom: -1rem; z-index: 999; background-size: contain; opacity: 0;} */
 
 /* skills */
 
 #desktop #skills .bg>h2{width: 18rem;}
-/* #desktop #skills .bg>.skill-title{text-align: center; font-size: 4.5rem; position: relative; margin: 2rem 0;}
-#desktop #skills .bg>.skill-title>span{display: inline-block; position: relative; width: 5rem; height: 5rem;background: url(../img/icon/skill-icon-removebg-preview.png) no-repeat; background-size: contain; border: none;}
-#desktop #skills .bg>.skill-title>.skill-img1{top: 0rem;  animation: skill1 infinite 3s linear;}
-#desktop #skills .bg>.skill-title>.skill-img2{right: 1.8rem; top: -1rem; transform: rotate(60deg); animation: skill2 infinite 3s linear;}
-
-@keyframes skill1{
-    0% {transform: rotate(0);}
-    100% {transform: rotate(360deg);}
-  }
-  @keyframes skill2{
-    0% {transform: rotate(0);}
-    100% {transform: rotate(-360deg);}
-  }
- */
 #desktop #skills .bg>.skill-box{width: 100%; display: flex; padding: 3rem; box-sizing: border-box; justify-content: space-around;}
 /* 스킬박스 공통속성 */
 #desktop #skills .bg>.skill-box h6{font-size: 3.5rem; padding: 1rem 0; padding-left: 2rem; background: #333; color: #fff;}
@@ -148,43 +100,23 @@ html, body{width: 100%; height: 100%;}
 
 /* work */
 
-#desktop #work .bg>h2{width: 38rem; display: inline-block; transform: scale(.7); opacity: .6; transition: .3s; cursor: pointer;}
-#desktop #work .bg>h2.on{transform: scale(1); opacity: 1;}
-#desktop #work .bg>h2.secondWork{background-color: yellow;}
-#desktop #work .bg>h2.thirdWork{background-color: #74D2FA;}
+#desktop #work .bg>.myWork{width: 100%; padding: 2rem 0 0  3rem; margin-top: 2rem; box-sizing: border-box; height: 70%; overflow-y: scroll;}
+#desktop #work .bg>.myWork::-webkit-scrollbar{width: 8px; height: 5px;}
+#desktop #work .bg>.myWork::-webkit-scrollbar-thumb{background-color: #333;}
+#desktop #work .bg>.myWork::-webkit-scrollbar-track{background-color: rgb(205, 205, 205);}
+#desktop #work .bg>.myWork>.work{display: flex; justify-content: space-around; width: 85%; height: 30rem; margin: 3rem 0;}
+#desktop #work .bg>.myWork>.work>p.work-img{width: 45%;}
+#desktop #work .bg>.myWork>.work>p.work-img >a>img{width: 95%; height: 95%; display: block;}
+#desktop #work .bg>.myWork>.work>div.explanation{width: 55%;}
+#desktop #work .bg>.myWork>.work>div.explanation>h3{font-size: 2.7rem; margin-bottom: 1rem; display: inline-block; box-sizing: border-box; padding: .5rem 2rem;}
+#desktop #work .bg>.myWork>.work>div.explanation>h4{font-size: 2.2rem;}
+#desktop #work .bg>.myWork>.work>div.explanation>.explan-list{padding-left: 2rem; margin: 1rem 0;}
+#desktop #work .bg>.myWork>.work>div.explanation>.explan-list>li{font-size: 1.8rem; display: block; margin: .5rem 0; text-decoration: underline;}
 
-#desktop #work .bg:first-child .work-content{margin: 2rem 0 4rem; position: relative;}
+#desktop #work .bg>.myWork>.todoListWork h3{background-color: rgb(134, 200, 99);  color: white;}
+#desktop #work .bg>.myWork>.cowayWork h3{background-color: #00a7e1;  color: white;}
+#desktop #work .bg>.myWork>.portfolioWork h3{background-color: #333;  color: white;}
 
-#desktop #work .bg .myWork>div{display: none; opacity: 0; transition: .5s;}
-#desktop #work .bg .myWork>div.on{display: block; opacity: 1;}
-
-#desktop #work .bg .myWork .work-title{font-size: 4.5rem; font-weight: bold;}
-.light-img{display: inline-block; width: 7rem; height: 7rem; background: url(../img/icon/light.png) no-repeat; animation: light 2s infinite alternate linear;}
-@keyframes light {
-  0%{background: url(../img/icon/light.png) no-repeat; background-size: contain;}
-  100%{background: url(../img/icon/light-on.png) no-repeat; background-size: contain;}
-}
-#desktop #work .bg .myWork .slide-btn{position: absolute; display: flex; top: 50%; transform: translateY(-50%); right: 0; justify-content: space-around;}
-#desktop #work .bg .myWork .slide-btn>li{width: 3rem; height: 3rem; border-radius: 50%; border: 1px dashed #333; background-color: rgba(148, 148, 148, 0.676); padding: 1px; box-sizing: border-box; margin: 0 .8rem; cursor: pointer; transition: .3s;}
-#desktop #work .bg .myWork .slide-btn>li.on{background: #3A89FF;}
-#desktop #work .bg .myWork .jsProject .slide-btn>li.on{background: yellow;}
-#desktop #work .bg .myWork .ReactProject .slide-btn>li.on{background: #74D2FA;}
-
-#desktop #work .bg .clone-coding{width: 100%; height: 55rem; display: block; position: relative; top: 3rem;}
-#desktop #work .bg .clone-coding>.aside{display: flex; justify-content: space-between; width: 100%; border: 2px dashed #666; border-radius: 1.5rem; padding: 1.5rem; box-sizing: border-box; position: absolute; left: 10px; opacity: 0;}
-
-#desktop #work .bg .clone-coding>.aside p,
-#desktop #work .bg .clone-coding>.aside span{font-size: 1.8rem; display: block;}
-#desktop #work .bg .clone-coding>.aside span{padding: 1rem 0;}
-
-#desktop #work .bg .clone-coding>.aside>.text{width: 44%; border-right: 2px dashed #666;}
-#desktop #work .bg .clone-coding>.aside>.text>h6{width: 100%; text-align: center; font-size: 3rem; padding: 2rem 0; font-weight: bold; border-bottom: 2px dashed #333;}
-#desktop #work .bg .clone-coding>.aside>.text>.content{margin: 3rem 0; font-size: 2rem; line-height: 2.3; text-align: left;} 
-
-#desktop #work .bg .clone-coding>.aside>.coding-img{width: 54%;}
-#desktop #work .bg .clone-coding>.aside>.coding-img>a.img-wrap{width: 100%; display: block;}
-#desktop #work .bg .clone-coding>.aside>.coding-img>a.img-wrap>img{width: 100%; height: 38rem;}
-#desktop #work .bg .clone-coding>.coding1{opacity: 1; z-index: 9;}
 
 /* contact */
 
@@ -209,21 +141,9 @@ html, body{width: 100%; height: 100%;}
 #desktop .main-articles>div:nth-child(2).parall{animation: aniY 1.6s forwards;}
 #desktop .main-articles>div:nth-child(3).parall{animation: aniY 1.8s forwards;}
 
-/* #desktop div.head-body1.parall{animation: aniY 1.5s forwards;}
-#desktop div.head-body2-left.parall{animation: aniY 1.9s forwards;}
-#desktop div.head-body2-right.parall{animation: aniY 2.1s forwards;}
-
-#desktop div.ct-left.parall{animation: aniY 1.5s forwards;}
-#desktop div.ct-right.parall{animation: aniY 1.9s forwards;} */
-
 #desktop .frontend.parall{animation: aniY 1.6s forwards;}
 #desktop .version-control.parall{animation: aniY 1.8s forwards;}
 #desktop .communication.parall{animation: aniY 1.9s forwards;}
-
-/* #desktop .skill-title.parall{animation: opac1 2s forwards;}
-#desktop .skill-title.parall.skill-img1{animation: opac1 2s forwards;}
-#desktop .skill-title.parall.skill-img2{animation: opac1 2s forwards;}
-#desktop .skill-box.parall{animation: opac1 2.2s forwards;} */
 
 #desktop .work-content.parall{animation: aniY 1.3s forwards;}
 #desktop .clone-coding.parall{animation: aniY 1.5s forwards;}
@@ -318,28 +238,19 @@ html, body{width: 100%; height: 100%;}
   /* work */
 #mobile #m-work{width: 100%;}
 #mobile #m-work .section-title>h2{width: 35rem;}
-#mobile #m-work .section-text{height: auto;}
-#mobile #m-work .section-text>.text-title{font-size: 4.5rem; margin: 2rem 0;}
+#mobile #m-work .m-myWork{width: 100%;}
+#mobile #m-work .m-myWork>.m-work{margin: 4rem 0;}
+#mobile #m-work .m-myWork>.m-work>p{width: 100%;}
+#mobile #m-work .m-myWork>.m-work>p img{display: block; width: 100%;}
+#mobile #m-work .m-myWork>.m-work>.explanation{}
+#mobile #m-work .m-myWork>.m-work>.explanation h3{font-size: 4.5rem; margin: 3rem 0; color: white; display: inline-block; padding: 1rem 2.5rem;}
+#mobile #m-work .m-myWork>.m-work>.explanation h4{font-size: 4rem;}
+#mobile #m-work .m-myWork>.m-work>.explanation li{font-size: 3rem; margin: 2rem 0;text-decoration: underline;}
+#mobile #m-work .m-myWork>.todoListWork{}
 
-#mobile #m-work .section-text>.work-box{margin: 5rem 0;}
-#mobile #m-work .section-text>.work-box>h3{width: 80%; background-color: #3A89FF; padding: 1.5rem 3rem; font-size: 3.5rem; color: rgba(255, 255, 255, 0.7); -webkit-text-stroke: .7px black; margin-bottom: 2rem; font-weight: bolder; position: relative; cursor: pointer;}
-#mobile #m-work .section-text>.work-box>h3::after{content: ''; position: absolute; top: 50%; transform: translateY(-50%); right: 3rem; width: 0px; height: 0px; border-left: 8px solid transparent; border-right: 8px solid transparent; border-bottom: 12px solid rgba(255, 255, 255, 0.8); transition: 0.3s;}
-#mobile #m-work .section-text>.work-box>h3.close::after{transform: rotate(180deg); top: 35%;}
-
-#mobile #m-work .section-text>.work-box>h3.js{background-color: yellow;}
-#mobile #m-work .section-text>.work-box>h3.react{background-color: #74D2FA;}
-
-#mobile #m-work .section-text>.work-box>.work-wrap{height: 100%; overflow: hidden;}
-#mobile #m-work .section-text>.work-box>h3.more+.work-wrap{height: 0; overflow: hidden;}
-#mobile #m-work .section-text>.work-box>.work-wrap>.work{margin: 2rem 0;}
-#mobile #m-work .section-text>.work-box>.work-wrap>.work>.img{width: 100%; height: auto; padding: 2rem 0; display: block; overflow: hidden;}
-
-#mobile #m-work .section-text>.work-box>.work-wrap>.work:hover>.img>img{transform: scale(110%); transition: .3s;}
-
-#mobile #m-work .section-text>.work-box>.work-wrap>.work>.img>img{width: 100%;}
-
-#mobile #m-work .section-text>.work-box>.work-wrap>.work>h4{color: #3A89FF; font-size: 3rem; font-weight: bold; padding: 1rem 0;} 
-#mobile #m-work .section-text>.work-box>.work-wrap>.work>.use{font-size: 2.5rem;}
+#mobile #m-work .m-myWork>.todoListWork h3{background-color: rgb(134, 200, 99);}
+#mobile #m-work .m-myWork>.cowayWork h3{background-color: #00a7e1;}
+#mobile #m-work .m-myWork>.portfolioWork h3{background-color: #333;}
 
   /* contact */
 #mobile #m-contact{width: 100%;}
